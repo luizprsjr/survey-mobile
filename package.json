@@ -23,14 +23,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@faker-js/faker": "^8.0.2",
     "@rocketseat/eslint-config": "^2.1.0",
     "@testing-library/jest-native": "^5.4.2",
     "@testing-library/react-native": "^12.2.2",
-    "@types/faker": "^6.6.9",
     "@types/jest": "^29.5.3",
     "@types/react": "~18.2.14",
     "eslint": "^8.47.0",
-    "faker": "^6.6.6",
     "git-commit-msg-linter": "^5.0.4",
     "typescript": "^5.1.3"
   },
