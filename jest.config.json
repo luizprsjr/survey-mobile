@@ -6,6 +6,7 @@
   ],
   "collectCoverageFrom": [
     "<rootDir>/src/**/*.{ts,tsx}",
+    "!./src/**/styles.ts",
     "!**/*.d.ts"
   ],
   "coverageDirectory": "coverage",
