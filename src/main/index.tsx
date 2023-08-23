@@ -1,6 +1,7 @@
 import { registerRootComponent } from 'expo'
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, View } from 'react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 import {
   Roboto_400Regular,
@@ -14,10 +15,12 @@ export default function App() {
   const [isFontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      {isFontsLoaded ? <Login /> : <Loading />}
-    </View>
+    <SafeAreaProvider style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <StatusBar style="auto" />
+        {isFontsLoaded ? <Login /> : <Loading />}
+      </View>
+    </SafeAreaProvider>
   )
 }
 
