@@ -7,7 +7,7 @@ import { styles } from './styles'
 export function Loading() {
   return (
     <View style={styles.container}>
-      <ActivityIndicator color={colors.primary} />
+      <ActivityIndicator color={colors.white} />
     </View>
   )
 }
